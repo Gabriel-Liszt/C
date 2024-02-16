@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+
+    /*
+    Crie um programa que pede que o usuario digite 4 notas de 0 a 10(tipo float)
+    de 4 alunos e os valores deverão ser armazernados em uma matriz bidimensional.
+    Faca a media das notas de cada aluno e armazene as 4 medias em um vetor. Por
+    ultimo coloque na tela do usuario uma mensagem informando a media de cada aluno.
+    */
+   float matriz[4][4] = {0};
+
+   //float media[4];
+
+    printf("Digite 4 notas de 0 a 10 de 4 alunos");
+    for(int i = 0; i < 4; i++){
+        for(int j = 0; j < 4; j++){
+            scanf("%f", &matriz[i][j]);
+            
+        };
+        printf("\n");
+
+    };
+
+
+    //printf("A media de cada aluno respectivamente foi %f ", media[0], media[1], media[2], media[3]);
+
+
+    return 0;
+};

@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+
+    int num1 = 20;
+    int num2 = 10;
+
+    int resposta;
+
+    num1 < num2 ? printf("Sim") : printf("Nao");
+
+
+    return 0;
+}
