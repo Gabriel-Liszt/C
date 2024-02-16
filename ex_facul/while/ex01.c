@@ -75,7 +75,7 @@ int main(){
         
         if(numrep == 0){
         printf("Processo terminado");
-    }
+        }
     }
 
 
