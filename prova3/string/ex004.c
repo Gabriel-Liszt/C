@@ -8,7 +8,11 @@ transforme o primeiro caractere de cada palavra da frase em maiúsculo.
 
 int main(){
 
+    char str[200];
 
+    fgets(str, 200, stdin);
+
+    
 
     return 0;
 }
