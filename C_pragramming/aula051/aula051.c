@@ -32,7 +32,7 @@ int main(){
 
     resultado = VerificaIgualdade(string1, string2);
 
-    printf("%d", resultado);
-
+    printf("%d\n", resultado);
+        
     return 0;
 }
