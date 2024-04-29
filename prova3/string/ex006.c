@@ -10,3 +10,38 @@ deve ser armazenado o valor -1 no vetor.
 #include <stdio.h>
 #include <string.h>
 
+#define max 20
+
+void vetorOC(char *str, char carac, int *vetor){
+    int j = 0;
+    for(int i = 0; i < strlen(str)-1; i++){
+        if(str[i] == carac){
+            vetor[j] = i;
+            j++;
+        }
+    }
+
+    if(j == 0){
+        vetor[0] = -1;
+    }else{
+        vetor[j] = -1;
+    }
+}
+
+int main(){
+    char str[max], carac;
+    int OC[max];
+
+    fgets(str, max, stdin);
+    scanf("%c", &carac);
+
+    vetorOC(str, carac, OC);
+
+    printf("vetor de ocorrencias{ ");
+    for(int i = 0; OC[i] != -1; i++){
+        printf(" %d,", OC[i]);
+    }
+    printf(" -1}");
+    
+    return 0;
+}
