@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "aula019": "c"
+        "aula019": "c",
+        "ctype.h": "c",
+        "stdio.h": "c"
     }
 }
